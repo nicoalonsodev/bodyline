@@ -3,7 +3,7 @@ import Pilares from "../Pilares/Pilares";
 import { logo_detail } from "../../assets";
 const AboutUs = () => {
   return (
-    <div className="relative w-screen bg-white flex flex-wrap items-center justify-center py-20">
+    <div id="bodyline" className="relative w-screen bg-white flex flex-wrap items-center justify-center py-20">
       <img
         src={logo_detail}
         alt="detalle"

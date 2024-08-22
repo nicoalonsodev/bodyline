@@ -37,7 +37,7 @@ const InstagramSection = () => {
   };
 
   return (
-    <div className="bg-blue-100 py-16">
+    <div id="community" className="bg-[#a1bcc9] py-20">
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-8">
           <div className="flex justify-center items-center">

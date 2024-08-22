@@ -1,6 +1,6 @@
 import React from "react";
 import TherapyCard from "../TherapyCard/TherapyCard";
-import { owner, flores } from "../../assets";
+import { owner, flores, food } from "../../assets";
 const FeaturedProperties = () => {
   const properties = [
     {
@@ -17,14 +17,14 @@ const FeaturedProperties = () => {
     },
     {
       image:
-        owner,
+      food,
       title: "Terapia 3",
       description: "Descripción breve de OTerapia 1",
     },
   ];
 
   return (
-    <div>
+    <div id="therapys">
       <div className="w-full flex flex-col items-center py-20">
         <h1 className="text-3xl font-clash-700 text-[#00314b] text-center lg:text-left">
           Nuestras

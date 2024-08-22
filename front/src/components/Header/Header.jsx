@@ -83,8 +83,8 @@ const Header = () => {
           <nav className="flex-grow flex justify-center space-x-10">
             <div className="text-md poppins-semibold space-x-10">
               <a
-                href="/proyectos"
-                onClick={() => handleNavClick("/proyectos")}
+                href="#bodyline"
+                // onClick={() => handleNavClick("/proyectos")}
                 className={`${
                   currentPage === "/proyectos" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
@@ -92,16 +92,16 @@ const Header = () => {
                 Bodyline
               </a>
               <a
-                href="/sobre-nosotros"
-                onClick={() => handleNavClick("/sobre-nosotros")}
+                href="#irene"
+                // onClick={() => handleNavClick("/sobre-nosotros")}
                 className={`${
                   currentPage === "/sobre-nosotros" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Terapias
+                Irene
               </a>
               <a
-                href="/contacto"
+                href="#contact"
                 onClick={() => handleNavClick("/contacto")}
                 className={`${currentPage === "/contacto" ? "active" : "a-h"} ${
                   navbar ? "text-gray-700" : ""
@@ -111,13 +111,13 @@ const Header = () => {
               </a>
 
               <a
-                href="/novedades"
+                href="#community"
                 onClick={() => handleNavClick("/novedades")}
                 className={`${
                   currentPage === "/novedades" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Pacientes
+                Comunidad
               </a>
             </div>
             <div
@@ -126,7 +126,7 @@ const Header = () => {
               } flex items-center border-[1px] hover:border-[#00314b] hover:text-[#00314b] duration-300 px-3 rounded-full`}
             >
               <a
-                href="/propiedades"
+                href="#therapys"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
                 Ver todas las terapias <GiThreeLeaves />
