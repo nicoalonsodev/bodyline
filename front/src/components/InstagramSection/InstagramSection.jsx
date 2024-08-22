@@ -90,7 +90,7 @@ const InstagramSection = () => {
             href="https://www.instagram.com/bodylinenqn"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-blue-700 font-poppins py-3 px-6 rounded-full text-sm border border-blue-700 hover:bg-blue-700 hover:text-white transition"
+            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition"
           >
             SÍGUENOS EN INSTAGRAM
           </a>
