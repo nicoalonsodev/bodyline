@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { logo, logoB } from "../../assets";
+import { logo, logoB, logo_w } from "../../assets";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 import { FaRegBuilding } from "react-icons/fa";
@@ -52,8 +52,9 @@ const Header = () => {
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
-                src={navbar ? logoB : logoB}
+                src={navbar ? logo_w : logo_w}
                 alt="Logo"
+                className="z-10"
                 style={{ width: "136px" }}
               />
             </a>
@@ -75,7 +76,7 @@ const Header = () => {
                 src={navbar ? logo : logoB}
                 alt="Logo"
                 style={{
-                  height: navbar ? "50px" : "70px",
+                  height: navbar ? "50px" : "40px",
                 }}
               />
             </a>
@@ -145,28 +146,28 @@ const Header = () => {
             className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#00314b] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
           >
             <a href="/" onClick={() => handleNavClick("/")} className="text-lg">
-              Inicio
+              Bodyline
             </a>
             <a
-              href="/proyectos"
+              href="#irene"
               onClick={() => handleNavClick("/proyectos")}
               className="text-lg"
             >
-              Edificios
+              Irene
             </a>
             <a
               href="/sobre-nosotros"
               onClick={() => handleNavClick("/sobre-nosotros")}
               className="text-lg"
             >
-              Nuestra Empresa
+          Contacto
             </a>
             <a
               href="/contacto"
               onClick={() => handleNavClick("/contacto")}
               className="text-lg"
             >
-              Contacto
+              Comunidad
             </a>
 
             <a
@@ -174,7 +175,7 @@ const Header = () => {
               onClick={() => handleNavClick("/novedades")}
               className="text-lg"
             >
-              News
+              Sesiones
             </a>
             <div>
               <a

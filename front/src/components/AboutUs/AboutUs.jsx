@@ -1,14 +1,17 @@
 import React from "react";
 import Pilares from "../Pilares/Pilares";
-import { logo_detail } from "../../assets";
+import { logo_detail3 } from "../../assets";
 const AboutUs = () => {
   return (
-    <div id="bodyline" className="relative w-screen bg-white flex flex-wrap items-center justify-center py-20">
+    <div id="bodyline" className="relative w-screen bg-white flex flex-wrap items-center justify-center py-20 overflow-hidden">
+      <div className="flex justify-start absolute top-32 left-0">
       <img
-        src={logo_detail}
+        src={logo_detail3}
         alt="detalle"
-        className="absolute top-32 left-0"
+        className="w-1/5 "
       />
+      </div>
+      
       <div className="max-w-4xl text-center p-6">
         <h2 className="text-3xl font-clash-700 text-gray-800 mb-4">
           Acerca de Bodyline

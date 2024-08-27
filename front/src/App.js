@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home/Home";
 import "./App.css";
+import WhatsAppButton from "./components/Whatsapp/WhatsappButton";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      {/* <WhatsAppButton /> */}
+      <WhatsAppButton />
     </div>
   );
 }

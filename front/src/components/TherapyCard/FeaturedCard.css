@@ -1,7 +1,7 @@
 .card-container {
   perspective: 1000px;
-  width: 300px;
-  height: 400px;
+  width: 380px;
+  height: 550px;
   margin: 20px;
 }
 @media (max-width: 768px) {
@@ -44,7 +44,7 @@
   color: white;
   transform: rotateY(180deg);
   padding: 20px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.929);
 }
 
 .card-image {
@@ -63,14 +63,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(0.5); /* Ajusta el brillo para crear la superposición negra */
+  filter: brightness(0.3); /* Ajusta el brillo para crear la superposición negra */
 }
 
 .card-title {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -78,6 +78,6 @@
 
 .card-description {
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   z-index: 1; /* Asegura que el texto esté sobre la imagen oscurecida */
 }
