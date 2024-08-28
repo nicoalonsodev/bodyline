@@ -11,7 +11,7 @@ const AboutUs = () => {
         className="w-1/5 "
       />
       </div>
-      <div className="flex lg:hidden justify-end absolute bottom-[380px] lg:bottom-0  lg:top-32 right-0">
+      <div className="flex lg:hidden justify-end absolute bottom-[420px] lg:bottom-0  lg:top-32 right-0">
       <img
         src={logo_detail3}
         alt="detalle"
