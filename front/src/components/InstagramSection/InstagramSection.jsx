@@ -2,7 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { logo } from "../../assets"; // Asegúrate de importar correctamente los videos
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importar íconos
+import { logo } from "../../assets"; 
+
 const videos = [
   "https://fast.wistia.net/embed/iframe/21q5a8q3qg",
   "https://fast.wistia.net/embed/iframe/6vmjz3ajjl",
@@ -10,16 +12,41 @@ const videos = [
   "https://fast.wistia.net/embed/iframe/96j7hknw7u",
   "https://fast.wistia.net/embed/iframe/9331wvp0kt",
 ];
+
 const InstagramSection = () => {
+  // Custom Next Arrow
+  const NextArrow = ({ onClick }) => {
+    return (
+      <div
+        className="absolute top-1/2 right-2 lg:-right-10 transform -translate-y-1/2 z-10 cursor-pointer text-white bg-[#00314b] p-2 rounded-full"
+        onClick={onClick}
+      >
+        <FaArrowRight size={30} />
+      </div>
+    );
+  };
+
+  // Custom Prev Arrow
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div
+        className="absolute top-1/2 left-2 lg:-left-10 transform -translate-y-1/2 z-10 cursor-pointer text-gray-200 bg-[#00314b] p-2 rounded-full"
+        onClick={onClick}
+      >
+        <FaArrowLeft size={30} />
+      </div>
+    );
+  };
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
     pauseOnHover: true,
+    nextArrow: <NextArrow />, // Añadir el botón de Next personalizado
+    prevArrow: <PrevArrow />, // Añadir el botón de Prev personalizado
     responsive: [
       {
         breakpoint: 1024,
@@ -30,7 +57,6 @@ const InstagramSection = () => {
           dots: true,
         },
       },
-
       {
         breakpoint: 600,
         settings: {
@@ -43,9 +69,9 @@ const InstagramSection = () => {
   };
 
   return (
-    <div id="community" className="bg-[#a1bcc9] py-20">
+    <div id="community" className="bg-[#a1bcc9] py-20 px-2">
       <div className="max-w-7xl mx-auto text-center">
-        <div className="mb-8 ">
+        <div className="mb-8">
           <div className="flex justify-center items-center">
             {/* <img src={logo} alt="Logo" className="w-[200px] mr-4" /> */}
             <div>
@@ -53,59 +79,27 @@ const InstagramSection = () => {
                 href="https://www.instagram.com/bodylinenqn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-3xl font-bold hover:underline"
+                className="text-3xl font-clash-700 text-gray-800 hover:underline"
               >
                 @bodylinenqn
               </a>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-lg text-balance">
                 Estar sano es posible solo hay que unir varias patas
               </p>
             </div>
           </div>
         </div>
-        <Slider {...settings}>
-          <div className="mx-4 h-[480px] w-full">
+        <Slider {...settings} className="w-full flex justify-center">
+          {videos.map((video, index) => (
+            <div key={index} className="px-0 lg:px-4 h-[480px] !flex justify-center">
               <iframe
                 className="rounded-lg w-auto h-full"
-                src={videos[0]}
-                title="Wistia Video"
+                src={video}
+                title={`Wistia Video ${index + 1}`}
                 allowFullScreen
               ></iframe>
-          </div>
-          <div className="mx-4 h-[480px] w-full">
-              <iframe
-                className="rounded-lg w-auto h-full"
-                src={videos[1]}
-                title="Wistia Video"
-                allowFullScreen
-              ></iframe>
-          </div>
-          <div className="mx-4 h-[480px] w-full">
-              <iframe
-                className="rounded-lg w-auto h-full"
-                src={videos[2]}
-                title="Wistia Video"
-                allowFullScreen
-              ></iframe>
-          </div>
-          <div className="mx-4 h-[480px] w-full">
-              <iframe
-                className="rounded-lg w-auto h-full"
-                src={videos[4]}
-                title="Wistia Video"
-                allowFullScreen
-              ></iframe>
-          </div>
-          <div className="mx-4 h-[480px] w-full">
-              <iframe
-                className="rounded-lg w-auto h-full"
-                src={videos[3]}
-                title="Wistia Video"
-                allowFullScreen
-              ></iframe>
-          </div>
-         
-          {/* Puedes agregar más videos o imágenes según sea necesario */}
+            </div>
+          ))}
         </Slider>
         <div className="mt-8">
           <a
