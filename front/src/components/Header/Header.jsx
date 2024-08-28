@@ -130,7 +130,7 @@ const Header = () => {
                 href="#therapys"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
-                Ver todas las terapias <GiThreeLeaves />
+                Ver todas las sesiones <GiThreeLeaves />
               </a>
             </div>
           </nav>
@@ -178,11 +178,11 @@ const Header = () => {
               Sesiones
             </a>
             <div>
-              <a
-                href="/"
-                className="tracking-widest poppins-regular bg-[#ffc702] hover:bg-[#a18c2d] duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
+            <a
+                href="#therapys"
+                className=" flex items-center gap-x-2 poppins-regular"
               >
-                SOLICITAR ASESOR <IoIosContacts className="text-3xl" />
+                Ver todas las sesiones <GiThreeLeaves />
               </a>
             </div>
           </motion.div>
