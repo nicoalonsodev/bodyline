@@ -4,7 +4,14 @@ import { logo_detail3 } from "../../assets";
 const AboutUs = () => {
   return (
     <div id="bodyline" className="relative w-screen bg-white flex flex-wrap items-center justify-center py-20 overflow-hidden">
-      <div className="flex justify-start absolute bottom-32 lg:bottom-0  lg:top-32 left-0">
+      <div className="hidden lg:flex justify-start absolute  lg:top-32 left-0">
+      <img
+        src={logo_detail3}
+        alt="detalle"
+        className="w-1/5 "
+      />
+      </div>
+      <div className="flex lg:hidden justify-start absolute bottom-32 lg:bottom-0   lg:top-32 left-0">
       <img
         src={logo_detail3}
         alt="detalle"
