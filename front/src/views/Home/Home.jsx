@@ -40,11 +40,9 @@ const Home = () => {
       <div className="overflow-hidden">
         <AboutIrene />
 
-        <InstagramSection />
-
         <Therapys />
-
-        <DescriptionContact />
+        <InstagramSection />
+        {/* <DescriptionContact /> */}
       </div>
 
       <Footer />
