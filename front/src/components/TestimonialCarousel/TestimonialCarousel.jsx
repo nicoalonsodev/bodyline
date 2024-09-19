@@ -72,7 +72,7 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="py-12">
+    <div className="py-12 px-2 lg:px-32">
       <h2 className="text-3xl font-clash-700 text-[#00314b] text-center mb-8">
         Testimonios de Nuestros Clientes
       </h2>
@@ -84,7 +84,7 @@ const TestimonialCarousel = () => {
                 {testimonial.name}
               </h3>
               <p className="italic text-gray-600 mb-2">{testimonial.session}</p>
-              <p className="text-gray-700">{testimonial.testimonial}</p>
+              <p className="text-gray-700 text-sm">{testimonial.testimonial}</p>
             </div>
           </div>
         ))}
