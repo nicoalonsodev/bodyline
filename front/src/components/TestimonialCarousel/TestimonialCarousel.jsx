@@ -7,7 +7,7 @@ const TestimonialCarousel = () => {
     {
       session: "Sesiones 1 a 1 NUTRICIÓN",
       name: "Juan Marino",
-      testimonial: `Irene: Juan, como te venís sintiendo? 
+      testimonial: `Irene: Juan, como te venís sintiendo? <br/>
         Juan: Tremendamente bien ✨✨💖💖 ahí te mando el audio a WhatsApp.
         Increíble todo lo que me pasaste. Un cambio 100 físico y conciencia.`,
     },
@@ -28,7 +28,7 @@ const TestimonialCarousel = () => {
       session: "Sesiones 1 a 1 NUTRICIÓN",
       name: "Sil",
       testimonial: `Hola hermosa ire como estas? fui a gimnasia y acá estoy haciéndome un mimo (JUGO) y siempre llevando tus conocimientos brindados a donde voy. 
-        Siempre agradezco haberte encontrado, porque sembraste en mí cosas hermosas, siempre en corazón, gracias por expandir sabiduría del bien te quiero ❤️`,
+       <br/> Siempre agradezco haberte encontrado, porque sembraste en mí cosas hermosas, siempre en corazón, gracias por expandir sabiduría del bien te quiero ❤️`,
     },
     {
       session: "Sesiones 1 a 1 RESPIRAR",
@@ -78,13 +78,15 @@ const TestimonialCarousel = () => {
       </h2>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="p-4 h-[320px]">
-            <div className="h-full bg-white p-6 rounded-lg shadow-md text-center">
+          <div key={index} className="p-4 h-[330px] lg:h-[320px]">
+            <div className="h-full bg-white p-6 rounded-xl shadow-md text-center">
               <h3 className="text-xl font-semibold text-[#00314b]">
                 {testimonial.name}
               </h3>
               <p className="italic text-gray-600 mb-2">{testimonial.session}</p>
-              <p className="text-gray-700 text-sm">{testimonial.testimonial}</p>
+              <p className="text-gray-700 text-sm"
+                dangerouslySetInnerHTML={{ __html: testimonial.testimonial }}
+              />
             </div>
           </div>
         ))}
