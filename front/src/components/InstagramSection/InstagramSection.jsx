@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importar íconos
+import { FaArrowLeft, FaArrowRight, FaInstagram, FaLinkedin } from "react-icons/fa"; // Importar íconos de Instagram y LinkedIn
 import { logo } from "../../assets"; 
 
 const videos = [
@@ -103,14 +103,22 @@ const InstagramSection = () => {
             </div>
           ))}
         </Slider>
-        <div className="mt-8">
+        <div className="flex justify-center mt-8 gap-4">
           <a
             href="https://www.instagram.com/bodylinenqn"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition"
+            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
           >
-            SÍGUENOS EN INSTAGRAM
+            <FaInstagram size={20} className="mr-2" /> Instagram
+          </a>
+          <a
+            href="http://linkedin.com/in/irene-carreras-711653121"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
+          >
+            <FaLinkedin size={20} className="mr-2" /> LinkedIn
           </a>
         </div>
       </div>

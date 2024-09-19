@@ -38,7 +38,8 @@ const Pilares = () => {
               className="w-20 h-20 mb-4 rounded-full"
             />
             <p className="font-clash-400 text-lg text-gray-600">
-              Respiración Consciente
+              Respiración Consciente.<br/>
+              Breathwork 
             </p>
           </div>
           {/* Repetir para los demás pilares */}
@@ -51,7 +52,7 @@ const Pilares = () => {
               className="w-20 h-20 mb-4 rounded-full"
             />
             <p className="font-clash-400 text-lg text-gray-600">
-              Desintoxicación Celular
+            Conexión con la naturaleza
             </p>
           </div>
           {/* Repetir para los demás pilares */}
