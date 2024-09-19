@@ -11,6 +11,8 @@ const videos = [
   "https://fast.wistia.net/embed/iframe/bf3wnqsaps",
   "https://fast.wistia.net/embed/iframe/96j7hknw7u",
   "https://fast.wistia.net/embed/iframe/9331wvp0kt",
+  "https://fast.wistia.net/embed/iframe/bvzkdyi8im",
+  
 ];
 
 const InstagramSection = () => {

@@ -31,19 +31,22 @@ const AboutUs = () => {
           Acerca de Bodyline
         </h2>
         <p className="text-lg font-clash-400 text-gray-600">
-          Bodyline ofrece un servicio integral de transformación personalizada
-          que abarca aspectos fundamentales de la salud, como la nutrición y el
-          breathwork. Su programa de 6 meses se centra en mejorar la salud
-          física y mental de los clientes mediante asesorías individualizadas
-          uno a uno. A diferencia de otras opciones en el mercado, Bodyline se
-          distingue por su enfoque personalizado, acompañando a los clientes en
-          todo el proceso de transformación.
+        Bodyline ofrece un servicio integral de transformación personalizada que abarca aspectos fundamentales de la salud, como la nutrición, la conexión con la naturaleza , el breathwork, la desintoxicación celular, jugoterapia, el auto cuidado, técnicas de mindset, crecimiento personal y mucho más. 
+        
+          Sus programas y sesiones  se centran en despertar ese gigante que tenemos dentro Abriendo las puertas que se requieran abrir. Siempre a tu ritmo. con un enfoque en disfrutar el proceso… adquiriendo las herramientas necesarias para autogestionar tu salud, Conocerte más, amarte más y brillar con luz propia. 
           <br />
           <br />
-          La filosofía de la marca se basa en la creencia de que una
-          transformación efectiva y duradera requiere un enfoque integral que
-          aborde tanto la alimentación como la respiración, buscando mejorar la
-          salud de manera sostenible en el tiempo.
+          A diferencia de otras opciones en el mercado, Bodyline se distingue por su enfoque personalizado, acompañando a los clientes en todo el proceso de transformación con mucho amor y respeto.
+          <br />
+          <br />
+          La filosofía de la marca se basa en la creencia de que una transformación efectiva y duradera requiere un enfoque integral que aborde tanto la alimentación como la respiración y el autoconocimiento, buscando una mentalidad de crecimiento, con mejoras sostenible en el tiempo. 
+          Sabiendo que la transformación ocurre cuando cambiamos nuestro estado del ser. 
+Estás listo para Crear  tu propio libro del bienestar? Estás listo para despertar tu gigante? 
+Estás listo para tu nuevo vos? 
+Estás listo! 
+Te esperamos con mucho gusto y amor dentro! 
+
+
         </p>
       </div>
       <Pilares />

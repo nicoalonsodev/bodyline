@@ -26,7 +26,20 @@ import logo_nutricion from "./sesiones-logo/nutricion.png";
 import logo_respiracion from "./sesiones-logo/respiracion-1.png";
 import logo_work_respiracion from "./sesiones-logo/workchop-respiracion.png"
 
+import breath from "./iconos/breath.png";
+import gigante from "./iconos/gigante.png";
+import hearth from "./iconos/hearth.png";
+import hielo from "./iconos/hielo.png";
+import jugoterapia from "./iconos/jugoterapia.png";
+import mindset from "./iconos/mindset.png";
+import nature from "./iconos/naturaleza.png";
+import tribu from "./iconos/tribu.png";
+
+import irene from "./irene.jpg";
+import irene2 from "./irene2.PNG";
 export {
+  irene2,
+  irene,
   banner,
   logo,
   logoB,
@@ -51,6 +64,16 @@ export {
   logo_florecer,
   logo_nutricion,
   logo_respiracion,
-  logo_work_respiracion
+  logo_work_respiracion,
+
+  breath,
+  gigante,
+  hearth,
+  hielo,
+  jugoterapia,
+  mindset,
+  nature,
+  tribu,
+
 
 };

@@ -15,6 +15,7 @@ import {
   logo_respiracion,
   logo_work_respiracion,
 } from "../../assets";
+import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel";
 
 const FeaturedProperties = () => {
   const properties = [
@@ -23,12 +24,7 @@ const FeaturedProperties = () => {
       title: "Despierta un Gigante",
       description: `
         Programa de Respiración Intensivo. 7 días para vivir una experiencia transformadora. Conecta con tu alquimia y despierta al gigante que hay en vos. 
-        Costo:
-        - Individual 1 a 1: 350 USD (en horarios que se ajusten a tu agenda)
-        - Grupal: 175 USD (sujeto a fechas y lanzamientos, cupos limitados).
-        Paso 1: Preparación - Workshop taller, 1 sesión vía Zoom de 3 horas aprox.
-        Paso 2: Activación - 2 sesiones diarias de respiración durante 5 días.
-        Paso 3: Desafío - 3 sesiones diarias de breathwork vía Zoom.`,
+Modalidad 100% Online.`,
       pdfLink: nutricion1_1,
       logo: logo_despierta_tu,
     },
@@ -94,6 +90,9 @@ const FeaturedProperties = () => {
             />
           </div>
         ))}
+      </div>
+      <div>
+        <TestimonialCarousel />
       </div>
       <div className="flex justify-center">
         <a
