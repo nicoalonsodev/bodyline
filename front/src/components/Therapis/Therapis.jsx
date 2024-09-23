@@ -91,9 +91,9 @@ Modalidad 100% Online.`,
           </div>
         ))}
       </div>
-      <div>
+      {/* <div>
         <TestimonialCarousel />
-      </div>
+      </div> */}
       <div className="flex justify-center">
         <a
           href="/"
