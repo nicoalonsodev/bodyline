@@ -1,12 +1,18 @@
 import React from "react";
 import TherapyCard from "../TherapyCard/TherapyCard";
 import {
-  owner,
-  flores,
-  food,
+  DTG,
+  DTG2,
+  FLORECER,
+  FLORECER2,
+  NUTRICION,
+  NUTRICION2,
+  RESPIRAR,
+  RESPIRAR2,
+  WORKSHOP_RESP,
+  WORKSHOP_RESP2,
   nutricion1_1,
   respirar1_1,
-  despierta_tu_gigante,
   transformacion_integral_grupal,
   workshop_respiracion,
   logo_despierta_tu,
@@ -20,7 +26,8 @@ import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel";
 const FeaturedProperties = () => {
   const properties = [
     {
-      image: owner,
+      image: DTG2,
+      image_back: DTG,
       title: "Despierta un Gigante",
       description: `
         Programa de Respiración Intensivo. 7 días para vivir una experiencia transformadora. Conecta con tu alquimia y despierta al gigante que hay en vos. 
@@ -29,7 +36,8 @@ Modalidad 100% Online.`,
       logo: logo_despierta_tu,
     },
     {
-      image: flores,
+      image: RESPIRAR,
+      image_back: RESPIRAR2,
       title: "Respirar | Sesiones 1:1",
       description: `
         La respiración es la base de la vida. Aprender a respirar de forma funcional, óptima y consciente es incorporar mayor bienestar a tu vida. 
@@ -38,7 +46,8 @@ Modalidad 100% Online.`,
       logo: logo_respiracion,
     },
     {
-      image: food,
+      image: FLORECER,
+      image_back: FLORECER2,
       title: "Florecer: Transformación Integral",
       description: `
         Acompaño a personas que quieran revertir malestar crónico de raíz. Busca lograr una vida plena llena de salud, vitalidad, energía y equilibrio.
@@ -47,7 +56,8 @@ Modalidad 100% Online.`,
       logo: logo_florecer,
     },
     {
-      image: owner,
+      image: NUTRICION,
+      image_back: NUTRICION2,
       title: "Nutrición | Sesiones 1:1",
       description: `
         Las consultas nutricionales son un buen inicio para dar los primeros pasos en tu cambio con la alimentación. Amigarte con el alimento, empezar a ordenar, incorporar más de eso que te hace bien. 
@@ -56,7 +66,8 @@ Modalidad 100% Online.`,
       logo: logo_nutricion,
     },
     {
-      image: food,
+      image: WORKSHOP_RESP,
+      image_back: WORKSHOP_RESP2,
       title: "Workshop Respiración",
       description: `
         Respirar es la clave para el buen vivir. El workshop es grupal o individual en vivo, vía Zoom. 
@@ -83,6 +94,7 @@ Modalidad 100% Online.`,
           >
             <TherapyCard
               image={property.image}
+              image_back={property.image_back}
               title={property.title}
               description={property.description}
               pdfLink={property.pdfLink}
