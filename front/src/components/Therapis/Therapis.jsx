@@ -21,8 +21,7 @@ import {
   logo_respiracion,
   logo_work_respiracion,
 } from "../../assets";
-import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel";
-
+import { motion } from "framer-motion";
 const FeaturedProperties = () => {
   const properties = [
     {
@@ -88,7 +87,11 @@ Modalidad 100% Online.`,
       </div>
       <div className="flex flex-wrap justify-center gap-8">
         {properties.map((property, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.6 }}
+            viewport={{ once: true, amount: 0.3 }}
             key={index}
             className="w-full md:w-1/2 lg:w-1/4 flex justify-center"
           >
@@ -100,7 +103,7 @@ Modalidad 100% Online.`,
               pdfLink={property.pdfLink}
               logo={property.logo}
             />
-          </div>
+          </motion.div>
         ))}
       </div>
       {/* <div>

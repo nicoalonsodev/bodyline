@@ -2,8 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaArrowLeft, FaArrowRight, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"; // Importar íconos de Instagram y LinkedIn
-
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa"; // Importar íconos de Instagram y LinkedIn
+import { motion } from "framer-motion";
 const videos = [
   "https://fast.wistia.net/embed/iframe/21q5a8q3qg",
   "https://fast.wistia.net/embed/iframe/6vmjz3ajjl",
@@ -11,7 +17,6 @@ const videos = [
   "https://fast.wistia.net/embed/iframe/96j7hknw7u",
   "https://fast.wistia.net/embed/iframe/9331wvp0kt",
   "https://fast.wistia.net/embed/iframe/bvzkdyi8im",
-  
 ];
 
 const InstagramSection = () => {
@@ -71,7 +76,13 @@ const InstagramSection = () => {
 
   return (
     <div id="community" className="bg-[#a1bcc9] py-20 px-2">
-      <div className="max-w-7xl mx-auto text-center">
+      <motion.div
+        className="max-w-7xl mx-auto text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.6 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="mb-8">
           <div className="flex justify-center items-center">
             {/* <img src={logo} alt="Logo" className="w-[200px] mr-4" /> */}
@@ -92,7 +103,10 @@ const InstagramSection = () => {
         </div>
         <Slider {...settings} className="w-full flex justify-center">
           {videos.map((video, index) => (
-            <div key={index} className="px-0 lg:px-4 h-[480px] !flex justify-center">
+            <div
+              key={index}
+              className="px-0 lg:px-4 h-[480px] !flex justify-center"
+            >
               <iframe
                 className="rounded-lg w-auto h-full"
                 src={video}
@@ -107,7 +121,7 @@ const InstagramSection = () => {
             href="https://www.instagram.com/bodylinenqn"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
+            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-3 lg:px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
           >
             <FaInstagram size={20} className="mr-2" /> Instagram
           </a>
@@ -115,7 +129,7 @@ const InstagramSection = () => {
             href="http://linkedin.com/in/irene-carreras-711653121"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
+            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-3 lg:px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
           >
             <FaLinkedin size={20} className="mr-2" /> LinkedIn
           </a>
@@ -123,12 +137,12 @@ const InstagramSection = () => {
             href="https://www.youtube.com/@irenecarrerasbodyline3323"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
+            className="inline-block bg-white text-[#00314b] font-poppins py-3 px-3 lg:px-6 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition flex items-center"
           >
             <FaYoutube size={20} className="mr-2" /> Youtube
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -9,10 +9,16 @@ import {
   nature,
   tribu,
 } from "../../assets/index";
+import { motion } from "framer-motion";
 const Pilares = () => {
   return (
     <div className=" py-12">
-      <div className="max-w-6xl mx-auto text-center">
+      <motion.div className="max-w-6xl mx-auto text-center"
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           transition={{ duration: 1.6 }}
+           viewport={{ once: true, amount: 0.3 }}
+      >
         {/* <h2 className="text-3xl font-clash-700 text-gray-800 mb-8">Los 6 Pilares de la Salud</h2> */}
         <div className="flex flex-wrap gap-8 justify-center">
           {/* Aquí agregar las imágenes de los pilares */}
@@ -118,7 +124,7 @@ const Pilares = () => {
             <p className="font-clash-400 text-lg text-gray-600">Hielo (Proximamente)</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -156,27 +156,21 @@ const Header = () => {
               Irene
             </a>
             <a
-              href="/sobre-nosotros"
+             href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer"
               onClick={() => handleNavClick("/sobre-nosotros")}
               className="text-lg"
             >
           Contacto
             </a>
             <a
-              href="/contacto"
+              href="#community"
               onClick={() => handleNavClick("/contacto")}
               className="text-lg"
             >
               Comunidad
             </a>
 
-            <a
-              href="/novedades"
-              onClick={() => handleNavClick("/novedades")}
-              className="text-lg"
-            >
-              Sesiones
-            </a>
+            
             <div>
             <a
                 href="#therapys"

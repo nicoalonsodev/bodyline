@@ -10,13 +10,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center">
        
         <nav className="space-y-2 text-md poppins-semibold">
-          <a href="#bodyline" className="block hover:text-gray-400">
+          <a href="/" className="block hover:text-gray-400">
             Bodyline
           </a>
           <a href="#irene" className="block hover:text-gray-400">
             Irene
           </a>
-          <a href="#contact" className="block hover:text-gray-400">
+          <a href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer" className="block hover:text-gray-400">
             Contacto
           </a>
           <a href="#community" className="block hover:text-gray-400">

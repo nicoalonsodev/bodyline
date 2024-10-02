@@ -1,11 +1,18 @@
 import React from "react";
-import { owner, irene2 } from "../../assets";
+import { irene2 } from "../../assets";
+import { motion } from "framer-motion";
 const AboutIrene = () => {
   return (
     <div id="irene" className="bg-[#a1bcc9] py-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Texto Descriptivo */}
-        <div className="lg:w-1/2 p-8">
+        <motion.div
+          className="lg:w-1/2 p-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h2 className="text-4xl font-clash-700 text-gray-800 mb-4">
             ¿Quién es Irene?
           </h2>
@@ -27,10 +34,16 @@ const AboutIrene = () => {
           >
             QUIERO SABER MÁS
           </a>
-        </div>
+        </motion.div>
 
         {/* Imagen Circular */}
-        <div className="lg:w-1/2 flex justify-center lg:justify-end p-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="lg:w-1/2 flex justify-center lg:justify-end p-8"
+        >
           <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden">
             <img
               src={irene2}
@@ -41,7 +54,7 @@ const AboutIrene = () => {
               <img src={irene2} alt="Logo" className="w-3/4 opacity-75" />
             </div> */}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
