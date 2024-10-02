@@ -34,7 +34,7 @@ const Home = () => {
              transition={{ duration: 3 }}
             >
               <a
-                href="/"
+               href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer"
                 className="tracking-widest poppins-regular bg-[#00314b] hover:bg-[#00314b] duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8"
               >
                 QUIERO ASESORARME

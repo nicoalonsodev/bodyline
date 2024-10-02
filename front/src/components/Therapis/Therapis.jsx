@@ -111,7 +111,7 @@ Modalidad 100% Online.`,
       </div> */}
       <div className="flex justify-center">
         <a
-          href="/"
+         href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer"
           className="w-auto tracking-widest poppins-regular bg-[#00314b] hover:bg-[#00314b] hover:scale-90 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8 shadow-lg"
         >
           QUIERO ASESORARME

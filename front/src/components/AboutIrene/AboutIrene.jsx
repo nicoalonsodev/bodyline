@@ -29,7 +29,7 @@ const AboutIrene = () => {
             forma vivo lo que comparto al 100%
           </p>
           <a
-            href="#"
+        href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer"
             className="inline-block bg-black text-white font-poppins py-3 px-6 rounded-full text-sm hover:bg-gray-800"
           >
             QUIERO SABER MÁS
