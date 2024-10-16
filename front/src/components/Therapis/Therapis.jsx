@@ -77,7 +77,7 @@ Modalidad 100% Online.`,
   ];
 
   return (
-    <div id="therapys" className="py-20 bg-gray-100">
+    <div id="therapys" className="py-20 bg-gray-100 px-2 lg:px-0">
       <div className="w-full flex flex-col items-center py-6">
         <h1 className="text-3xl lg:text-4xl font-clash-400 text-[#00314b] text-center lg:text-left">
           Nuestras{" "}
