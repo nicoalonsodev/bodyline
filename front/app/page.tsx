@@ -20,7 +20,7 @@ export default function Home() {
           <div className="relative h-screen">
             <img className="absolute top-0 left-0 w-full h-full object-cover" src="/assets/banner.png" alt="Banner" />
             <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center pt-[440px] lg:pt-[360px] px-4">
+            <div className="absolute inset-0 flex flex-col items-center justify-center pt-[390px] lg:pt-[360px] px-4">
               <motion.h1
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

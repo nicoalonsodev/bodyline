@@ -163,7 +163,7 @@ const DaysItinerary: React.FC<RetreatScheduleProps> = ({
                     "{day.description}"
                   </p>
                 </div>
-                <div className="p-8 space-y-8">
+                {/* <div className="p-8 space-y-8">
                   {day.activities.map((activity, activityIndex) => (
                     <div key={activityIndex} className="flex items-start gap-6">
                       <div className="bg-[#a1bcc9]/20 p-3 rounded-full shrink-0">
@@ -179,7 +179,7 @@ const DaysItinerary: React.FC<RetreatScheduleProps> = ({
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </TabsContent>

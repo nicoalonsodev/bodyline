@@ -249,7 +249,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                     >
                       1
                     </div>
-                    <div className="ml-2 text-sm font-clash-500">Información</div>
+                    <div className="ml-2 text-sm font-clash-500 text-gray-700">Información</div>
                   </div>
                   <div className={`flex-1 h-1 mx-4 ${step >= 2 ? "bg-[#315032]" : "bg-gray-200"}`}></div>
                   <div className="flex items-center">
@@ -258,7 +258,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                     >
                       2
                     </div>
-                    <div className="ml-2 text-sm font-clash-500">Pago</div>
+                    <div className="ml-2 text-sm font-clash-500 text-gray-700">Pago</div>
                   </div>
                   <div className={`flex-1 h-1 mx-4 ${step >= 3 ? "bg-[#315032]" : "bg-gray-200"}`}></div>
                   <div className="flex items-center">
@@ -267,7 +267,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                     >
                       3
                     </div>
-                    <div className="ml-2 text-sm font-clash-500">Confirmación</div>
+                    <div className="ml-2 text-sm font-clash-500 text-gray-700">Confirmación</div>
                   </div>
                 </div>
               </div>
@@ -428,7 +428,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                           variant="outline"
                           size="sm"
                           onClick={() => setShowPackageSelection(true)}
-                          className="text-sm"
+                          className="text-sm text-gray-700"
                         >
                           Cambiar
                         </Button>
@@ -448,7 +448,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                         onChange={handleInputChange}
                         placeholder="Ingresa tu nombre completo"
                         required
-                        className="rounded-xl"
+                        className="rounded-xl text-gray-700"
                       />
                     </div>
                     <div>
@@ -463,7 +463,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                         onChange={handleInputChange}
                         placeholder="tu@email.com"
                         required
-                        className="rounded-xl"
+                        className="rounded-xl text-gray-700"
                       />
                     </div>
                     <div>
@@ -478,7 +478,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                         onChange={handleInputChange}
                         placeholder="+54 9 11 1234 5678"
                         required
-                        className="rounded-xl"
+                        className="rounded-xl text-gray-700"
                       />
                     </div>
                   </div>
@@ -518,7 +518,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                         >
                           <div className="text-center">
                             <h3 className="font-clash-600 text-[#315032] mb-2">Transferencia Bancaria</h3>
-                            <p className="text-sm text-gray-500">Datos para transferencia directa</p>
+                            <p className="text-sm text-gray-500">Datos para transferencia directa o link de PayPal</p>
                           </div>
                         </Label>
                       </div>
@@ -596,9 +596,9 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                     )}
                     <Separator className="my-2" />
                     <div className="flex justify-between font-clash-600">
-                      <span>Total a pagar ahora</span>
+                      <span className="text-[#4A5D4C]">Total a pagar ahora</span>
                       <div className="text-right">
-                        <div>
+                        <div className="text-gray-700">
                           {formatUSD(
                             paymentAmount === "deposit" ? getDepositAmount(packageType) : getPackagePrice(packageType),
                           )}
@@ -733,7 +733,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
               )}
 
               <div className="flex justify-between mt-8">
-                <Button variant="outline" onClick={handleBack} className="rounded-xl">
+                <Button variant="outline" onClick={handleBack} className="rounded-xl text-gray-700">
                   {step === 1 ? "Cancelar" : "Atrás"}
                 </Button>
                 {step < 3 && (

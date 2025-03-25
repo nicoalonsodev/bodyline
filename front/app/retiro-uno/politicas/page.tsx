@@ -22,7 +22,7 @@ export default function PoliticasPage() {
             <h2 className="text-2xl font-clash-700 text-[#315032] mb-4">
               Política de Cancelación Consciente – Retiro UNO: Origen y Destino
             </h2>
-            <div className="prose prose-green max-w-none">
+            <div className="prose prose-green max-w-none text-gray-700">
               <p>
                 Este retiro es un espacio sagrado de transformación profunda, y cada persona que reserva su lugar está
                 tomando un compromiso energético consigo misma y con el grupo. Por esta razón, hemos diseñado una
@@ -92,7 +92,7 @@ export default function PoliticasPage() {
             <h2 className="text-2xl font-clash-700 text-[#315032] mb-4">
               Política de Responsabilidad – Retiro UNO: Origen y Destino
             </h2>
-            <div className="prose prose-green max-w-none">
+            <div className="prose prose-green max-w-none text-gray-700">
               <p>
                 El retiro UNO: Origen y Destino es una experiencia de profunda transformación, expansión y reconexión
                 con la esencia del Ser. Cada participante es responsable de su proceso, de su bienestar físico, mental y
@@ -224,7 +224,7 @@ export default function PoliticasPage() {
             <h2 className="text-2xl font-clash-700 text-[#315032] mb-4">
               Política y Autorización para Grabaciones y Fotografías – Retiro UNO: Origen y Destino
             </h2>
-            <div className="prose prose-green max-w-none">
+            <div className="prose prose-green max-w-none text-gray-700">
               <p>
                 En el retiro UNO: Origen y Destino, la experiencia de cada participante es sagrada y profundamente
                 personal. Para honrar la privacidad, el respeto y la integridad de cada proceso, establecemos la
