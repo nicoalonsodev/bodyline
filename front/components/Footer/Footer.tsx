@@ -16,6 +16,7 @@ const Footer = ({ className = "" }) => {
     { label: "Información", href: "/retiro-uno#informacion" },
     { label: "Anfitrionas", href: "/retiro-uno#anfitrionas" },
     { label: "Precios", href: "/retiro-uno#precios" },
+    { label: "Politicas", href: "/retiro-uno/politicas" },
   ]
 
   return (
