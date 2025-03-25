@@ -1,0 +1,129 @@
+/* Header.css */
+.header {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(255, 255, 255); /* Fondo oscuro semi-transparente */
+}
+
+.header-bg {
+  background-color: rgb(255, 255, 255); /* Fondo oscuro semi-transparente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(5px); /* Soporte para Safari */
+}
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    background-color: #00314b; /* Fondo amarillo */
+    height: 80px;
+  }
+  .header-bg {
+    background-color: #00314b;
+
+  }
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-visible {
+  transform: translateY(0);
+}
+
+
+
+.logo {
+  transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.active {
+  border-bottom: 2px solid #00314b;
+}
+
+.a-h {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.a-h:hover {
+  border-bottom: 2px solid #00314b;
+}
+
+.header a {
+  color: black; /* Color de texto blanco para enlaces */
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+
+.header a:hover {
+  color: #00314b; /* Color de hover para enlaces */
+}
+
+.btn-propiedades {
+  transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.menu-open {
+  display: block;
+}
+
+.menu-closed {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00314b;
+  z-index: 30;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.underline-on-hover {
+  position: relative;
+}
+
+.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  right: 0; /* Ajustamos la posición desde la derecha */
+  bottom: -2px; /* Ajusta la posición del subrayado según tus necesidades */
+  width: 0;
+  height: 2px; /* Grosor del subrayado */
+  background-color: #00314b; /* Color del subrayado */
+  transition: width 0.3s ease; /* Duración y curva de la animación */
+}
+
+.underline-on-hover:hover::after {
+  width: 100%; /* Ancho completo al hacer hover */
+  right: auto; /* Restablecemos la posición para que el subrayado empiece desde la derecha */
+  left: 0; /* Ajustamos la posición desde la izquierda */
+}
+
+.button-calendly {
+  color: #484848;
+  border: 3px solid #00314b;
+  background-color: #00314b;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.button-calendly:hover {
+  background-color: #00314b;
+  color: #00314b;
+}
