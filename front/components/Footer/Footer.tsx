@@ -40,7 +40,10 @@ const Footer = ({ className = "" }) => {
                 : "Transformando vidas a través de experiencias conscientes, nutrición plant-based y conexión con la naturaleza."}
             </p>
             <div className="flex space-x-4">
-              <a
+              
+              {!isRetiroUno && (
+                <>
+                <a
                 href={
                   isRetiroUno
                     ? "https://www.instagram.com/uno_origen.y.detino"
@@ -52,8 +55,6 @@ const Footer = ({ className = "" }) => {
               >
                 <Instagram size={20} />
               </a>
-              {!isRetiroUno && (
-                <>
                   <a
                     href="http://linkedin.com/in/irene-carreras-711653121"
                     target="_blank"
