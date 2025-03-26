@@ -6,7 +6,7 @@ import {
   Calendar,
   MapPin,
   Users,
-  Clock,
+  Instagram,
   CheckCircle,
   Star,
 } from "lucide-react";
@@ -486,6 +486,16 @@ export default function RetiroUno() {
                       <br />
                       Irene | +54 9 299 6302273
                     </p>
+                    <li className="flex items-start gap-2">
+                    <a
+                      href="https://www.instagram.com/uno_origen.y.destino/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 font-clash-400 flex justify-center items-center gap-2"
+                    >
+                      <Instagram size={20} /> UNO: El llamado del Origen.
+                    </a>
+                  </li>
                   </div>
                 </div>
               </div>
@@ -764,7 +774,7 @@ export default function RetiroUno() {
               {
                 question: "¿Qué debo llevar al retiro?",
                 answer:
-                  "Recomendamos ropa cómoda para las prácticas, traje de baño, calzado para caminatas ligeras, protector solar, repelente de insectos y artículos de higiene personal. Enviaremos una lista detallada a todos los participantes antes del retiro.",
+                  "Este retiro es un portal hacia la reconexión con tu esencia más pura. Más allá de los objetos materiales, lo más importante es venir con el corazón abierto y el alma lista para recibir, liberar y recordar. Te enviaremos  una lista amorosa, consciente y expansiva de lo que te acompañará en este viaje sagrado.",
               },
               {
                 question:
@@ -784,15 +794,17 @@ export default function RetiroUno() {
               },
               {
                 question: "¿Qué pasa si necesito cancelar mi reserva?",
-                answer:
-                  "Entendemos que pueden surgir imprevistos. Si cancelas hasta 30 días antes del retiro, te reembolsamos el 70% del valor. Hasta 15 días antes, el 50%. Para cancelaciones posteriores, no hay reembolso pero puedes transferir tu lugar a otra persona o utilizarlo en un futuro retiro dentro del año siguiente.",
+                answer: `Entendemos que pueden surgir imprevistos. <a href="/retiro-uno/politicas" class="underline text-[#315032] hover:text-[#315032]/80">Hacé click acá</a> para leer las políticas conscientes que armamos para ti!`,
               },
             ].map((faq, index) => (
               <div key={index} className="border-b border-[#315032]/20 pb-6">
                 <h3 className="text-xl font-clash-700 text-[#315032] mb-2">
                   {faq.question}
                 </h3>
-                <p className="text-gray-600 font-clash-400">{faq.answer}</p>
+                <p
+                  className="text-gray-600 font-clash-400"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
               </div>
             ))}
           </div>
@@ -877,7 +889,7 @@ export default function RetiroUno() {
           <span className="text-2xl">.08</span>
         </div>
       </section>
-      <WhatsAppButton />
+
       <Footer className="bg-[#315032]" />
 
       {/* Modal de Pago */}
@@ -889,6 +901,7 @@ export default function RetiroUno() {
         }}
         preSelectedPackage={selectedPackage}
       />
+      <WhatsAppButton />
     </div>
   );
 }
