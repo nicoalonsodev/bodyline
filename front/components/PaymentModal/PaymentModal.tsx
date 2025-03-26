@@ -310,7 +310,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                                 {!isPromotionActive && (
                                   <p className="text-xs text-red-500 font-semibold">Promoción finalizada</p>
                                 )}
-                                <p className="font-clash-700 text-xl">${getPackagePrice("promotion")} USD</p>
+                                <p className="text-gray-700 font-clash-700 text-xl">${getPackagePrice("promotion")} USD</p>
                               </div>
                               <ul className="text-left space-y-2 flex-grow">
                                 <li className="flex items-center gap-2">
@@ -364,7 +364,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
                               <div className="text-center mb-4">
                                 <h3 className="font-clash-600 text-[#315032]">Precio Regular</h3>
                                 <p className="text-sm text-gray-500 mb-2">Después del 22 de Marzo</p>
-                                <p className="font-clash-700 text-xl">${getPackagePrice("regular")} USD</p>
+                                <p className="text-gray-700 font-clash-700 text-xl">${getPackagePrice("regular")} USD</p>
                               </div>
                               <ul className="text-left space-y-2 flex-grow">
                                 <li className="flex items-center gap-2">
