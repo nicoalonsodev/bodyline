@@ -21,6 +21,7 @@ import Hosts from "@/components/Hosts/Hosts";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import DaysItinerary from "@/components/DaysItinerary/DaysItinerary";
+import WhatsAppButton from "@/components/Whatsapp/WhatsappButton";
 
 export default function RetiroUno() {
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
@@ -872,7 +873,7 @@ const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
           <span className="text-2xl">.08</span>
         </div>
       </section>
-
+<WhatsAppButton />
       <Footer className="bg-[#315032]" />
 
       {/* Modal de Pago */}
