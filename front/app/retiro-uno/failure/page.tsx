@@ -53,7 +53,7 @@ export default function PaymentFailure() {
 
             <Button
               variant="outline"
-              className="w-full"
+              className="w-full text-gray-700"
               onClick={() => window.open("https://wa.me/+5492996302273", "_blank")}
             >
               Contactar soporte

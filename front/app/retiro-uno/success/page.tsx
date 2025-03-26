@@ -89,7 +89,7 @@ export default function PaymentSuccess() {
             </Link>
 
             <Link href="/">
-              <Button variant="outline" className="w-full">
+              <Button variant="outline" className="w-full text-gray-700">
                 Ir a Bodyline
               </Button>
             </Link>
