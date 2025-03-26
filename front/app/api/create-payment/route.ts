@@ -81,7 +81,7 @@ export async function POST(request: Request) {
         pending: `${siteUrl}/retiro-uno/pending`,
       },
       auto_return: "approved",
-      notification_url: `${siteUrl}/api/webhook/mercadopago`,
+      notification_url: `https://www.bodylinenqn.com/api/webhook/mercadopago`,
     }
 
     try {
