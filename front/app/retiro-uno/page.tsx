@@ -30,10 +30,10 @@ export default function RetiroUno() {
     undefined
   );
   const totalSpots = 22;
-// Para calcular Fechad e caducidad del primer precio
-const currentDate = new Date();
-const cutoffDate = new Date('2025-03-22');
-const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
+  // Para calcular Fechad e caducidad del primer precio
+  const currentDate = new Date();
+  const cutoffDate = new Date("2025-03-22");
+  const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
 
   // Referencias para animaciones
   const scheduleRef = useRef(null);
@@ -64,16 +64,17 @@ const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
 
   const handlePackageClick = (packageType: string) => {
     const currentDate = new Date();
-    const cutoffDate = new Date('2025-03-22'); // Using current year based on today's date
-    const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
-    
+    const cutoffDate = new Date("2025-03-22"); // Using current year based on today's date
+    const isLaunchPeriodOver =
+      currentDate > cutoffDate || registeredCount >= 10;
+
     // If trying to select the launch price option when it's no longer available
     if (packageType === "promotion" && isLaunchPeriodOver) {
       // You could show an alert or message to the user
       alert("Lo sentimos, el precio de lanzamiento ya no está disponible.");
       return;
     }
-    
+
     setSelectedPackage(packageType);
     setIsPaymentModalOpen(true);
   };
@@ -517,190 +518,193 @@ const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
         </div>
 
         <div className="max-w-6xl mx-auto">
-  <div className="text-[#315032]/80 text-sm tracking-widest mb-4 text-center">
-    RETIRO | PATAGONIA ARGENTINA
-  </div>
-
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={pricingInView ? { opacity: 1, y: 0 } : {}}
-    transition={{ duration: 0.8 }}
-    className="text-center mb-16"
-  >
-    <h2 className="text-3xl md:text-4xl font-clash-700 text-[#315032] mb-4">
-      La experiencia incluye:
-    </h2>
-    <div className="w-32 h-1 bg-[#315032] mx-auto"></div>
-  </motion.div>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={pricingInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay: 0.1 }}
-      className="flex flex-col"
-    >
-      {/* First pricing card - Primer Precio (Launch Price) */}
-      <Card className={`h-full border-none shadow-md transition-shadow flex flex-col bg-[#f8f5f2] ${isLaunchPeriodOver ? 'opacity-70' : 'hover:shadow-lg'}`}>
-        <CardContent className="p-8 flex flex-col h-full">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-clash-700 text-[#315032] mb-2">
-              Primer Precio
-            </h3>
-            <p className="text-gray-600 font-clash-400 mb-6">
-              Hasta el 22 de Marzo o agotar 10 cupos
-            </p>
-            {isLaunchPeriodOver && (
-              <div className="bg-red-100 text-red-700 px-4 py-2 rounded-md mb-4 font-clash-400">
-                No disponible
-              </div>
-            )}
-            <div className="mb-6">
-              <span className="text-4xl font-clash-400 text-[#315032]">
-                $1,255 USD
-              </span>
-            </div>
-            <ul className="text-left space-y-3 mb-8 flex-grow">
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Hospedaje en Wake up Patagonia, a orillas del Lago
-                  Gutiérrez
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Alimentación completa (4 comidas diarias)
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Todas las experiencias y actividades del Retiro
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Servicio de transporte desde aeropuerto o terminal de
-                  Bariloche
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Sesión individual con ambas anfitrionas + sesiones
-                  grupales previas
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Fotografías y videos profesionales del retiro
-                </span>
-              </li>
-            </ul>
-            <p className="text-sm text-gray-500 italic mb-6 font-clash-400">
-              *No incluye tickets aéreos ni traslados hasta Bariloche
-            </p>
+          <div className="text-[#315032]/80 text-sm tracking-widest mb-4 text-center">
+            RETIRO | PATAGONIA ARGENTINA
           </div>
-          <div className="mt-auto">
-            <Button
-              onClick={() => handlePackageClick("promotion")}
-              className={`w-full py-6 rounded-full ${
-                isLaunchPeriodOver 
-                  ? 'bg-gray-400 cursor-not-allowed' 
-                  : 'bg-[#315032] hover:bg-[#315032]/90 text-white'
-              }`}
-              disabled={isLaunchPeriodOver}
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={pricingInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-clash-700 text-[#315032] mb-4">
+              La experiencia incluye:
+            </h2>
+            <div className="w-32 h-1 bg-[#315032] mx-auto"></div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={pricingInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="flex flex-col"
             >
-              {isLaunchPeriodOver ? 'No Disponible' : 'Reservar Ahora'}
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-    </motion.div>
+              {/* First pricing card - Primer Precio (Launch Price) */}
+              <Card
+                className={`h-full border-none shadow-md transition-shadow flex flex-col bg-[#f8f5f2] ${
+                  isLaunchPeriodOver ? "opacity-70" : "hover:shadow-lg"
+                }`}
+              >
+                <CardContent className="p-8 flex flex-col h-full">
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-clash-700 text-[#315032] mb-2">
+                      Primer Precio
+                    </h3>
+                    <p className="text-gray-600 font-clash-400 mb-6">
+                      Hasta el 22 de Marzo o agotar 10 cupos
+                    </p>
+                    {isLaunchPeriodOver && (
+                      <div className="bg-red-100 text-red-700 px-4 py-2 rounded-md mb-4 font-clash-400">
+                        No disponible
+                      </div>
+                    )}
+                    <div className="mb-6">
+                      <span className="text-4xl font-clash-400 text-[#315032]">
+                        $1,255 USD
+                      </span>
+                    </div>
+                    <ul className="text-left space-y-3 mb-8 flex-grow">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Hospedaje en Wake up Patagonia, a orillas del Lago
+                          Gutiérrez
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Alimentación completa (4 comidas diarias)
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Todas las experiencias y actividades del Retiro
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Servicio de transporte desde aeropuerto o terminal de
+                          Bariloche
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Sesión individual con ambas anfitrionas + sesiones
+                          grupales previas
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Fotografías y videos profesionales del retiro
+                        </span>
+                      </li>
+                    </ul>
+                    <p className="text-sm text-gray-500 italic mb-6 font-clash-400">
+                      *No incluye tickets aéreos ni traslados hasta Bariloche
+                    </p>
+                  </div>
+                  <div className="mt-auto">
+                    <Button
+                      onClick={() => handlePackageClick("promotion")}
+                      className={`w-full py-6 rounded-full ${
+                        isLaunchPeriodOver
+                          ? "bg-gray-400 cursor-not-allowed"
+                          : "bg-[#315032] hover:bg-[#315032]/90 text-white"
+                      }`}
+                      disabled={isLaunchPeriodOver}
+                    >
+                      {isLaunchPeriodOver ? "No Disponible" : "Reservar Ahora"}
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={pricingInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay: 0.2 }}
-      className="flex flex-col"
-    >
-      {/* Second pricing card - Precio Regular */}
-      <Card className="h-full border-none shadow-md hover:shadow-lg transition-shadow flex flex-col bg-[#f8f5f2]">
-        <CardContent className="p-8 flex flex-col h-full">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-clash-700 text-[#315032] mb-2">
-              Precio Regular
-            </h3>
-            <p className="text-gray-600 font-clash-400 mb-6">
-              Después del 22 de Marzo
-            </p>
-            <div className="mb-6">
-              <span className="text-4xl font-clash-400 text-[#315032]">
-                $1,555 USD
-              </span>
-            </div>
-            <ul className="text-left space-y-3 mb-8 flex-grow">
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Hospedaje en Wake up Patagonia, a orillas del Lago
-                  Gutiérrez
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Alimentación completa (4 comidas diarias)
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Todas las experiencias y actividades del Retiro
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Servicio de transporte desde aeropuerto o terminal de
-                  Bariloche
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Sesión individual con ambas anfitrionas + sesiones
-                  grupales previas
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-[#315032]" />
-                <span className="text-gray-600 font-clash-400">
-                  Fotografías y videos profesionales del retiro
-                </span>
-              </li>
-            </ul>
-            <p className="text-sm text-gray-500 italic mb-6 font-clash-400">
-              *No incluye tickets aéreos ni traslados hasta Bariloche
-            </p>
-          </div>
-          <div className="mt-auto">
-            <Button
-              onClick={() => handlePackageClick("regular")}
-              className="w-full bg-[#315032] hover:bg-[#315032]/90 text-white py-6 rounded-full"
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={pricingInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex flex-col"
             >
-              Reservar Ahora
-            </Button>
+              {/* Second pricing card - Precio Regular */}
+              <Card className="h-full border-none shadow-md hover:shadow-lg transition-shadow flex flex-col bg-[#f8f5f2]">
+                <CardContent className="p-8 flex flex-col h-full">
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-clash-700 text-[#315032] mb-2">
+                      Precio Regular
+                    </h3>
+                    <p className="text-gray-600 font-clash-400 mb-6">
+                      Después del 22 de Marzo
+                    </p>
+                    <div className="mb-6">
+                      <span className="text-4xl font-clash-400 text-[#315032]">
+                        $1,555 USD
+                      </span>
+                    </div>
+                    <ul className="text-left space-y-3 mb-8 flex-grow">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Hospedaje en Wake up Patagonia, a orillas del Lago
+                          Gutiérrez
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Alimentación completa (4 comidas diarias)
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Todas las experiencias y actividades del Retiro
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Servicio de transporte desde aeropuerto o terminal de
+                          Bariloche
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Sesión individual con ambas anfitrionas + sesiones
+                          grupales previas
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-[#315032]" />
+                        <span className="text-gray-600 font-clash-400">
+                          Fotografías y videos profesionales del retiro
+                        </span>
+                      </li>
+                    </ul>
+                    <p className="text-sm text-gray-500 italic mb-6 font-clash-400">
+                      *No incluye tickets aéreos ni traslados hasta Bariloche
+                    </p>
+                  </div>
+                  <div className="mt-auto">
+                    <Button
+                      onClick={() => handlePackageClick("regular")}
+                      className="w-full bg-[#315032] hover:bg-[#315032]/90 text-white py-6 rounded-full"
+                    >
+                      Reservar Ahora
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
-        </CardContent>
-      </Card>
-    </motion.div>
-  </div>
-
 
           <div className="mt-8 text-center">
             <p className="text-gray-600 font-clash-400 mb-4">
@@ -873,7 +877,7 @@ const isLaunchPeriodOver = currentDate > cutoffDate || registeredCount >= 10;
           <span className="text-2xl">.08</span>
         </div>
       </section>
-<WhatsAppButton />
+      <WhatsAppButton />
       <Footer className="bg-[#315032]" />
 
       {/* Modal de Pago */}
