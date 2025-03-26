@@ -889,7 +889,7 @@ export default function RetiroUno() {
           <span className="text-2xl">.08</span>
         </div>
       </section>
-
+      <WhatsAppButton />
       <Footer className="bg-[#315032]" />
 
       {/* Modal de Pago */}
@@ -901,7 +901,7 @@ export default function RetiroUno() {
         }}
         preSelectedPackage={selectedPackage}
       />
-      <WhatsAppButton />
+     
     </div>
   );
 }
