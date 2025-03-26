@@ -119,7 +119,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, preSelecte
     // Precios base para cada tipo de paquete
     const prices = {
       promotion: 1255,
-      regular: 10,
+      regular: 1555,
     }
 
     // Obtener el precio base para el tipo seleccionado
