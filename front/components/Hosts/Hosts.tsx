@@ -54,7 +54,7 @@ export default function Hosts() {
           >
             <div className="relative w-64 h-64 rounded-full overflow-hidden mb-8">
               <Image
-                src="/assets/retiro-uno/pily.jpg"
+                src="/assets/retiro-uno/pily.webp"
                 alt="Pily"
                 fill
                 className="object-cover grayscale"
@@ -128,7 +128,7 @@ export default function Hosts() {
           >
             <div className="relative w-64 h-64 rounded-full overflow-hidden mb-8">
               <Image
-                src="/assets/retiro-uno/irene2.jpg"
+                src="/assets/retiro-uno/irene2.webp"
                 alt="Irene"
                 fill
                 className="object-cover grayscale"

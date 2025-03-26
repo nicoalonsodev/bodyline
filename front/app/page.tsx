@@ -150,7 +150,7 @@ export default function RetiroUno() {
       <section className="relative h-screen w-full  overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/assets/retiro-uno/montaña1.jpg"
+            src="/assets/retiro-uno/montaña1.webp"
             alt="UNO Retiro Hero"
             className="w-full h-full object-cover"
           />
@@ -404,7 +404,7 @@ export default function RetiroUno() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/assets/retiro-uno/Montaña-uno.jpeg"
+                src="/assets/retiro-uno/Montaña-uno.webp"
                 alt="Ubicación del Retiro UNO"
                 fill
                 className="object-cover rounded-2xl"
