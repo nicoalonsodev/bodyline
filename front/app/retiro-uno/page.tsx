@@ -710,7 +710,7 @@ export default function RetiroUno() {
                   <div className="mt-auto">
                     <a href="https://calendly.com/uno-retiros/30min"  target="_blank">
                     <Button
-                      onClick={() => handlePackageClick("regular")}
+                      // onClick={() => handlePackageClick("regular")}
                       className="w-full bg-[#315032] hover:bg-[#315032]/90 text-white py-6 rounded-full"
                     >
                       {/* Reservar Ahora */}
