@@ -150,7 +150,7 @@ export default function RetiroUno() {
       <section className="relative h-screen w-full  overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/assets/retiro-uno/montaña1.webp"
+            src="/assets/retiro-uno/montaña1.jpg"
             alt="UNO Retiro Hero"
             className="w-full h-full object-cover"
           />
@@ -179,12 +179,16 @@ export default function RetiroUno() {
               en el escenario perfecto para la revelación de tu ser.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={handleReserveClick}
-                className="bg-[#315032] hover:bg-[#315032]/90 text-white px-8 py-6 rounded-full text-lg"
-              >
-                Reserva tu lugar ahora
-              </Button>
+              <a href="https://calendly.com/uno-retiros/30min"  target="_blank">
+                {" "}
+                <Button
+                  // onClick={handleReserveClick}
+                  className="w-full bg-[#315032] hover:bg-[#315032]/90 text-white px-8 py-6 rounded-full text-lg"
+                >
+                  {/* Reserva tu Lugar */}
+                  Hablemos y Reserva Tu Lugar
+                </Button>
+              </a>
               <Button
                 variant="outline"
                 className="bg-transparent border-white text-white hover:bg-white/10 px-8 py-6 rounded-full text-lg"
@@ -404,7 +408,7 @@ export default function RetiroUno() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/assets/retiro-uno/Montaña-uno.webp"
+                src="/assets/retiro-uno/Montaña-uno.jpeg"
                 alt="Ubicación del Retiro UNO"
                 fill
                 className="object-cover rounded-2xl"
@@ -487,15 +491,15 @@ export default function RetiroUno() {
                       Irene | +54 9 299 6302273
                     </p>
                     <li className="flex items-start gap-2">
-                    <a
-                      href="https://www.instagram.com/uno_origen.y.destino/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 font-clash-400 flex justify-center items-center gap-2"
-                    >
-                      <Instagram size={20} /> UNO: El llamado del Origen.
-                    </a>
-                  </li>
+                      <a
+                        href="https://www.instagram.com/uno_origen.y.destino/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 font-clash-400 flex justify-center items-center gap-2"
+                      >
+                        <Instagram size={20} /> UNO: El llamado del Origen.
+                      </a>
+                    </li>
                   </div>
                 </div>
               </div>
@@ -704,12 +708,15 @@ export default function RetiroUno() {
                     </p>
                   </div>
                   <div className="mt-auto">
+                    <a href="https://calendly.com/uno-retiros/30min"  target="_blank">
                     <Button
                       onClick={() => handlePackageClick("regular")}
                       className="w-full bg-[#315032] hover:bg-[#315032]/90 text-white py-6 rounded-full"
                     >
-                      Reservar Ahora
+                      {/* Reservar Ahora */}
+                    Hablemos y Reservá Tu Lugar
                     </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
