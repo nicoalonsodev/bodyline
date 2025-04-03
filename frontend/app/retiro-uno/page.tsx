@@ -862,12 +862,14 @@ export default function RetiroUno() {
             vida. Los lugares son limitados, ¡asegura el tuyo ahora!
           </p>
           <div className="flex flex-col items-center gap-4">
+          <a href="https://calendly.com/uno-retiros/30min"  target="_blank">
             <Button
-              onClick={handleReserveClick}
+              // onClick={handleReserveClick}
               className="bg-[#315032] hover:bg-[#315032]/90 text-white px-8 py-6 rounded-full text-lg"
             >
               Reserva tu lugar ahora
             </Button>
+            </a>
             <div className="mt-4 bg-[#315032]/10 rounded-lg py-2 px-4 flex items-center gap-2">
               <Users className="h-4 w-4 text-[#315032]" />
               <p className="text-sm text-[#315032] font-clash-400">
