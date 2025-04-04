@@ -179,7 +179,7 @@ export default function RetiroUno() {
               en el escenario perfecto para la revelación de tu ser.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {/* <a href="https://calendly.com/uno-retiros/30min"  target="_blank"> */}
+              
                 {" "}
                 <Button
                    onClick={handleReserveClick}
@@ -188,18 +188,20 @@ export default function RetiroUno() {
                   Reserva tu Lugar
                   {/* Hablemos y Reserva Tu Lugar */}
                 </Button>
-              {/* </a> */}
+             
+               <a href="https://calendly.com/uno-retiros/30min"  target="_blank">
               <Button
                 variant="outline"
                 className="bg-transparent border-white text-white hover:bg-white/10 px-8 py-6 rounded-full text-lg"
-                onClick={() =>
-                  document
-                    .getElementById("detalles")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                // onClick={() =>
+                //   document
+                //     .getElementById("detalles")
+                //     ?.scrollIntoView({ behavior: "smooth" })
+                // }
               >
-                Conoce más
+                Agendá tu Llamada!
               </Button>
+               </a>
             </div>
           </motion.div>
         </div>
