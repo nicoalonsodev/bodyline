@@ -189,10 +189,10 @@ export default function RetiroUno() {
                   {/* Hablemos y Reserva Tu Lugar */}
                 </Button>
              
-               <a href="https://calendly.com/uno-retiros/30min"  target="_blank">
+               <a href="https://calendly.com/uno-retiros/30min" className=""  target="_blank">
               <Button
                 variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white/10 px-8 py-6 rounded-full text-lg"
+                className="w-full bg-transparent border-white text-white hover:bg-[#315032] hover:border-[#315032] hover:text-white duration-300 px-8 py-6 rounded-full text-lg"
                 // onClick={() =>
                 //   document
                 //     .getElementById("detalles")
