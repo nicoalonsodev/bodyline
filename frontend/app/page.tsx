@@ -49,11 +49,7 @@ export default function Home() {
                 >
                   QUIERO ASESORARME
                 </a>
-                <Link href="/retiro-uno">
-                  <Button className="bg-white text-[#00314b] hover:bg-white/90 px-6 py-3 rounded-full">
-                    Ver Retiro UNO
-                  </Button>
-                </Link>
+                
               </div>
             </motion.div>
           </div>
