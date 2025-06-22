@@ -15,7 +15,7 @@ const Pilares = () => {
       >
         <div className="flex flex-wrap gap-8 justify-center">
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={jugoterapia || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/jugoterapia.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">
               Alimentación Saludable
               <br />
@@ -23,7 +23,7 @@ const Pilares = () => {
             </p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={breath || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/breath.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">
               Respiración Consciente.
               <br />
@@ -31,31 +31,31 @@ const Pilares = () => {
             </p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={nature || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/naturaleza.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">Conexión con la naturaleza</p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={mindset || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/mindset.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">Mindset. Crecimiento personal </p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={hearth || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/hearth.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">Amor. Auto cuidado.</p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={gigante || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/gigante.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">
               Despierta tu gigante. <br />
               Potencial humano
             </p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={tribu || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <img src="/assets/iconos/tribu.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
             <p className="font-clash-400 text-lg text-gray-600">Tribu</p>
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
-            <img src={hielo || "/placeholder.svg"} alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
-            <p className="font-clash-400 text-lg text-gray-600">Hielo (Proximamente)</p>
+            <img src="/assets/iconos/hielo.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
+            <p className="font-clash-400 text-lg text-gray-600">Hielo</p>
           </div>
         </div>
       </motion.div>
