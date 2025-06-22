@@ -44,12 +44,7 @@ export default function Home() {
                 >
                   QUIERO ASESORARME
                 </a>
-                <Link
-                  href="/retiro-uno"
-                  className="tracking-widest poppins-regular border-2 border-white hover:bg-white/20 duration-300 text-white px-6 py-3 rounded-3xl flex items-center justify-center"
-                >
-                  RETIRO UNO
-                </Link>
+               
               </motion.div>
             </div>
           </div>

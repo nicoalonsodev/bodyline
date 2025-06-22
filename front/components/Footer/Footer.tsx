@@ -113,14 +113,7 @@ const Footer = ({ className = "" }) => {
                       Inicio
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/retiro-uno"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Retiro UNO
-                    </Link>
-                  </li>
+                
                   <li>
                     <Link
                       href="/sobre-nosotros"
