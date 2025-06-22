@@ -21,7 +21,7 @@ export default function AboutIrene() {
             Una apasionada del bienestar. Amo aventurarme y desafiarme siempre a más. Me encantan los jugos y todo lo
             que requiera conocerme más a mí misma. Mi clave respirar! He encontrado en ella una puerta maravillosa
             siendo una de las llaves que mas utilizo para el bien vivir! Cualquier momento o situación es bueno para
-            respirar conscientemente. Soy nutricionista de profesión, health coach y facilitadora de Breathwork. Suelo
+            respirar conscientemente. Soy nutricionista de profesión, health coach, instructora certificada de la academia hielo y amor y facilitadora de Breathwork. Suelo
             ser bien curiosa por lo que capacitarme y mantenerme aprendiendo me mantiene motivada he inspirada. Todo lo
             que suelo compartir lo he probado en mi! De estas forma vivo lo que comparto al 100%
           </p>

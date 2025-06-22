@@ -55,7 +55,7 @@ const Pilares = () => {
           </div>
           <div className="w-1/3 lg:w-1/5 flex flex-col items-center">
             <img src="/assets/iconos/hielo.png" alt="Pilar 1" className="w-20 h-20 mb-4 rounded-full" />
-            <p className="font-clash-400 text-lg text-gray-600">Hielo (Proximamente)</p>
+            <p className="font-clash-400 text-lg text-gray-600">Hielo</p>
           </div>
         </div>
       </motion.div>
